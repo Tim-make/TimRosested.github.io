@@ -1,0 +1,230 @@
+body{
+    margin: 0;
+    background-image: url("../images/background.png");
+}
+nav ul{
+    /* So ul will be in a row , not in a column*/
+    display: flex;
+
+    /* We remove bullets*/
+    list-style: none;
+
+    /*we move our to ul to the left corner*/
+    padding: 0;
+
+    /* Space between our ul*/
+    gap: 10px;
+
+}
+
+/* Background color of our naviagtion*/
+nav 
+{
+    background-color: black;
+/*space inside vanigation*/
+    padding: 20px;
+
+
+}
+
+/**/
+
+nav a
+{   
+/*our links become a box*/
+    display: block;
+
+    font-size: 20px;
+    color: ghostwhite;
+    text-decoration: none;
+
+/*Space inside each link*/
+    padding: 5px;
+}
+nav a:hover
+{
+/*navigation links adjustment*/
+    background-color: grey;
+}
+
+
+
+main
+{
+    max-width: 1000px;
+
+/*space outside element*/
+    margin: 0 auto;
+
+/*space inside element*/
+    padding: 20px;
+}
+
+
+/*heading adjustment*/
+h1
+{
+    font-size: 28px;    
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: gainsboro;
+    text-shadow: 5px 5px 5px black;
+}
+
+/*Mi interests adjustment*/
+h2
+{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    text-decoration: none;
+    color: gainsboro;
+    text-shadow: 5px 5px 5px black;
+}
+
+/*We adjust class interests */
+.interests
+{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 0;
+    list-style: none;
+    color: gainsboro;
+    text-shadow: 5px 5px 5px black;
+}
+
+/**/
+
+/*Adjust li elements inside class interests*/
+.interests li
+{
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+/*paragraph adjustment*/
+p
+{
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6; 
+    text-align: center;
+    color: gainsboro;
+    text-shadow: 5px 5px 5px black;
+}
+
+/*responsiveimage */
+img
+{
+    display: block;
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+   
+    
+    /*the height is set to auto to avoid stretching*/
+    height: auto;
+}
+
+/**/
+
+ 
+/**/
+/*Adjustment to every sections in the main.CV */
+main section
+{
+    margin-bottom: 60px;
+}
+
+footer p
+{
+    font-size: 13px;
+
+}
+
+/**/
+/*Style adjustment for projects alltogether */
+.projects
+{
+    /*Grid container*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/*Style adjustmnet for each separate project*/
+.project
+{
+     /*Space inside the card*/
+    padding: 20px;
+    border: 2px solid black;
+}
+
+/*Style adjustmnet for projects images*/
+.project img
+{
+width: 100%;
+height: auto;
+margin-top: 15px;
+}
+
+.project h2
+{
+    font-size: 20px;
+}
+
+/**/
+/*Adjust projects links*/
+.project a
+{
+    display: inline-block;
+    padding: 4px 6px;
+    background-color: darkgray;
+    color: white;
+    text-decoration: none;
+}
+
+/*Made links more like button with background change*/
+.project a:hover
+{
+    background-color: black;
+}
+
+/*media query for screens up to 600px*/
+@media(max-width:600px)
+{
+    nav ul
+    {
+        gap: 1px;
+    }
+    nav a
+    {
+        font-size: 16px;
+    }
+
+    .projects
+    {
+        grid-template-columns: 1fr;
+    }
+}
+
+.about-content
+{
+    display: flex;
+    gap: 40px
+    ;
+}
+
+/**/
+
+/*Let it take the remaining available space*/
+.about-text
+{
+    flex: 1;
+}
+
+.about-content > img
+{
+    width: 220px;
+}
